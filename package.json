@@ -18,6 +18,7 @@
   "main": "dist/module.cjs.js",
   "module": "dist/module.esm.js",
   "unpkg": "dist/cdn.min.js",
+  "jsdelivr": "dist/cdn.min.js",
   "devDependencies": {
     "esbuild": "^0.24.0"
   }
