@@ -1,9 +1,8 @@
 # Alpine Content Link
 
-> [!WARNING]
-This plugin is still in development.
+> This plugin is still in development.
 
-An Alpine Plugin for creating linked content inspired by Heydon Pickering‘s [Cards chapter in Inclusive Components](https://inclusive-components.design/cards/).
+An Alpine Plugin that add `x-content-link` directive for creating linked content. Inspired by Heydon Pickering‘s [Cards chapter in Inclusive Components](https://inclusive-components.design/cards/).
 
 Wrapping a card or a similar component in an anchor or button element isn’t recommended. When screen readers announce the link or button they use all the content within the anchor element, the text isn’t selectable, and you can’t have multiple interactive elements in the card—nesting an anchor link in an anchor link is… well… do not do that.
 
@@ -11,9 +10,11 @@ Wrapping a card or a similar component in an anchor or button element isn’t re
 
 ### CDN
 
-Include the script before Alpine.
+Include the script before Alpine. Change `x.x.x` to use a specific version.
 
 ```html
+<script defer src="https://cdn.jsdelivr.net/npm/@srwild/alpinejs-content-link@x.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 ```
 
 ### NPM Package
@@ -49,3 +50,5 @@ window.Alpine.start();
   </li>
 </ul
 ```
+
+🐈‍⬛ Adopt don’t shop 🐈‍⬛
