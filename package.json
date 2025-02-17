@@ -1,0 +1,20 @@
+{
+  "name": "@srwild/alpinejs-content-link",
+  "version": "0.1.0",
+  "description": "Alpinejs directive to add interactive elements to content blocks.",
+  "author": "S.R. Wild",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "watch": "node scripts/build.js --watch",
+    "start": "npm run watch",
+    "prepare": "npm run build"
+  },
+  "license": "MIT",
+  "main": "dist/module.cjs.js",
+  "module": "dist/module.esm.js",
+  "unpkg": "dist/cdn.min.js",
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}

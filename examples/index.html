@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Alpine Content Link</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Load Content Link plugin before Alpine -->
+  <script defer src="../dist/cdn.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header class="container">
+    <h1>Alpine Content Link</h1>
+  </header>
+  <main>
+    <div x-data class="container">
+
+      <ul class="card-grid">
+        <li x-content-link class="card">
+          <img src="https://placecats.com/g/300/200" alt="">
+          <h2 class="card-heading"><a href="https://www.catsofyore.com">Cats of Yore</a></h2>
+          <p>Do commodo consequat sunt veniam aute Lorem minim anim nostrud</p>
+        </li>
+
+        <li x-content-link class="card">
+          <img src="https://placecats.com/g/300/200" alt="">
+          <h2 class="card-heading"><a href="https://www.merrymacfarmsanctuary.org/">Merrymac Farm Sanctuary</a></h2>
+          <p>Do commodo consequat. <a href="#">Nested link</a>. Lorem minim anim nostrud</p>
+        </li>
+
+        <li x-content-link class="card">
+          <img src="https://placecats.com/g/300/200" alt="">
+          <h2 class="card-heading"><a href="https://www.hsccvt.org/">Humane Society of Chittenden County</a></h2>
+          <p>Tempor labore qui duis elit incididunt eiusmod nostrud</p>
+        </li>
+
+        <li x-content-link class="card">
+          <img src="https://placecats.com/g/300/200" alt="">
+          <button class="card-heading" type="button" @click="alert('Card button did a button')">Card Button</button>
+          <p>Amet in nisi amet ea sit cillum aliqua anim</p>
+        </li>
+
+        <li x-content-link class="card">
+          <img src="https://placecats.com/g/300/200" alt="">
+          <h2 class="card-heading"><a href="#place">Link to Place</a></h2>
+          <p>Amet in <a href="#first">first link</a> ea sit <a href="#second">second link</a> anim</p>
+        </li>
+
+        <li x-content-link class="card">
+          <img src="https://placecats.com/g/300/200" alt="">
+          <h2 class="card-heading">No link</h2>
+          <p>Tempor labore qui duis elit incididunt eiusmod nostrud</p>
+          <button type="button" @click="alert('The button buttoned!')">Button that buttons</button>
+        </li>
+
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p class="slug">🐈‍⬛ Adopt dont’t shop. 🐈‍⬛</p>
+  </footer>
+
+</body>
+
+</html>
