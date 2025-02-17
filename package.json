@@ -1,6 +1,6 @@
 {
   "name": "@srwild/alpinejs-content-link",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Alpinejs directive to add interactive elements to content blocks.",
   "author": "S.R. Wild",
   "type": "module",
