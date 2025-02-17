@@ -4,6 +4,10 @@
   "description": "Alpinejs directive to add interactive elements to content blocks.",
   "author": "S.R. Wild",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srwild/alpinejs-content-link.git"
+  },
   "scripts": {
     "build": "node scripts/build.js",
     "watch": "node scripts/build.js --watch",
