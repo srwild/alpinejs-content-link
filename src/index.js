@@ -14,12 +14,8 @@ function ContentLink(Alpine) {
     };
 
     const handleMouseUp = (event) => {
-      // Ignore the click if the target is a nested link or button other than the main link
-      if (
-        event.target.closest('a, button') &&
-        event.target !== firstInteractiveElement
-      )
-        return;
+      // Let links and buttons handle their own native click
+      if (event.target.closest('a, button')) return;
 
       // Trigger the primary link click if it's a quick click
       if (isQuickClick()) {
