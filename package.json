@@ -22,6 +22,6 @@
   "jsdelivr": "dist/cdn.min.js",
   "devDependencies": {
     "@playwright/test": "^1.62.1",
-    "esbuild": "^0.24.0"
+    "esbuild": "^0.28.0"
   }
 }
