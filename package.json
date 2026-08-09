@@ -12,6 +12,7 @@
     "build": "node scripts/build.js",
     "watch": "node scripts/build.js --watch",
     "start": "npm run watch",
+    "test": "playwright test",
     "prepare": "npm run build"
   },
   "license": "MIT",
@@ -20,6 +21,7 @@
   "unpkg": "dist/cdn.min.js",
   "jsdelivr": "dist/cdn.min.js",
   "devDependencies": {
-    "esbuild": "^0.24.0"
+    "@playwright/test": "^1.62.1",
+    "esbuild": "^0.28.0"
   }
 }
